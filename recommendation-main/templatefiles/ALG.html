@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked genre</title>
+    <link rel="stylesheet" href="staticfiles/ALG.css">
+</head>
+<body>
+    <div class="blur">
+        <div class="back">
+    <div class="UP">
+        <form action="{{url_for('add_liked_genre')}} " class="p-3 mt-3" method="post">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="alg" id="" placeholder="ADD LIKED GENRE">
+            </div>
+            <button class="btn mt-3">SUBMIT</button>
+        </form>
+    </div></div>
+    </div>
+    <div class="box2">
+        <div class="UD">User Details<hr class="rec">
+            <div class="name">NAME: &emsp;<span > {{user_dict['username']}} </span></div><br>
+            <div class="un">USERNAME: &emsp;<span>{{user_dict['username']}}</span></div><br>
+            <div class="fav">HISTORY: &emsp;<span>{{user_dict["history"]}}</span></div><br>
+            <div class="lg">LIKED GENRE:  &emsp;<span>{{user_dict['lg']}}</span></div><br>
+            <div class="dg">DISLIKED GENRE:  &emsp;<span>{{user_dict['ug']}}</span></div><br>
+        </div>
+        </div>
+</body>
+</html>

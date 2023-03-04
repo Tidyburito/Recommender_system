@@ -1,0 +1,197 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    /* width: 100%;
+    height: 100%; */
+    background-image:url('bg.gif');
+    background-color: rgba(219, 218, 218, 0.76);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items:center ;
+    
+    
+}
+.box{
+    padding-left: 20px ;
+    padding-right: 20px ;
+    border-radius: 0.3cm;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    position:relative;
+    /* border-start-start-radius:0.5cm;
+    border-end-start-radius:0.5cm; */
+    /* border: 200px; */
+    /* justify-content: center; */
+    /* border-color: rgb(228, 5, 5); */
+    background-color: rgb(255, 250, 250);
+    height: 400px;
+    width: 300px;
+    left: 25%;
+    /* right: 25%; */
+    top: 309px;
+    /* align-items: center; */
+    filter: drop-shadow(-5px 10px 18px rgba(0, 0, 0, 0.37));  
+    /* padding-left: 5px;
+    padding-right: px; */
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+}
+
+.login{
+    display: flex;
+    flex-wrap:wrap ;
+    position: relative;
+    /* top: 100px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size:x-large;
+    font-weight: 700;
+    /* top: 50px; */
+    /* height: inherit;
+    width: inherit; */
+    color: #ffffff;
+}
+.sign{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    justify-content:center ;
+    font-size: xx-large;
+    /* left: 132px; */
+    height: 34px;
+    width: 400px;
+    align-items: center;
+    top: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+}
+
+.UP .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: rgb(252, 252, 252);
+}
+
+.UP .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    /* color: rgb(102, 102, 102); */
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.UP .form-field {
+    position: relative;
+    bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px ;
+    border: 1px solid #7f8585;
+    box-shadow: inset 8px 8px 8px #97e9e979, inset -8px -8px 8px rgba(139, 245, 240, 0.452);
+}
+
+.UP .form-field .fas {
+    color: rgb(139, 43, 43);
+}
+
+.UP .btn {
+    background-color: #05f7ff; 
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 7px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
+    margin-left: 30%;
+    margin-right: 38%;
+    transition-duration: 0.5s;
+    border: 2px solid #15abd1;
+    right:85px ;
+    
+}
+
+.UP .btn:hover {
+    background-color: #f9fafa;
+}
+
+.UP a {
+    position: relative;                                                                                                                    
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #0b0c0c;
+    justify-content: bottom;
+    width: 100%;
+    height: auto;
+    top: 20px ;
+}
+
+.UP a:hover {
+    color: #d15e5e;
+}
+.UP {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    position: relative;
+    width: 383px;
+    height: 400px;
+    margin: 0px 10% 20px 11%;
+    padding: 30px 30px 20px 20px;
+    /* background-color: #ffffff; */
+    border-radius: 15px;
+    /* box-shadow: 4px 4px 7px #ffffffa8, -4px -4px 7px rgba(255, 255, 255, 0.651); */
+    justify-content: center;
+    top: 20px;
+}
+
+.LOGW{
+    color: black;
+    position: relative;
+    max-width: 300px;
+    height: 26px;
+    justify-content: center;
+    /* left: 80px; */
+    bottom: 20px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.UP .btn2 {
+    background-color: #05f7ff; 
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 7px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
+    margin-left: 30%;
+    margin-right: 38%;
+    transition-duration: 0.5s;
+    border: 2px solid #15abd1;
+    bottom: 36px;
+    left: 76px;
+    
+    
+}
+
+.UP .btn2:hover {
+    background-color: #f9fafa;
+}

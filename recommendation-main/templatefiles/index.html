@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="staticfiles/login.css">
+</head>
+<body>
+    <div class="box">
+        <div class="login">
+            <div class="UP">
+                <div class="LOGW">SIGN IN</div>
+                <form action="{{url_for('my_home')}}" class="p-3 mt-3" method="post">
+                    <div class="form-field d-flex align-items-center">
+                        <span class="far fa-user"></span>
+                        <input type="text" name="us" id="Username" placeholder="Username">
+                    </div>
+                    <div class="form-field d-flex align-items-center">
+                        <span class="fas fa-key"></span>
+                        <input type="password" name="pd" id="password" placeholder="Password">
+                    </div>
+                    <button class="btn mt-3">Login</button>
+                    <button class="btn2 mt-3" formaction="">SignUp</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

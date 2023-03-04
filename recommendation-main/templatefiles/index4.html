@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="staticfiles/main.css">
+  <title>books</title>
+</head>
+<body>
+  <div class="box1">
+
+    <div class="recom">You should Read<hr class="rec"></div><br>
+    <!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+
+  
+  <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+  <div class="scroll">
+  <table class="GeneratedTable">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Movie Name</th>
+        <th>ID</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>{{wanted[0][0]}}</td>
+        <td>{{wanted[0][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>{{wanted[1][0]}}</td>
+        <td>{{wanted[1][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>{{wanted[2][0]}}</td>
+        <td>{{wanted[2][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>{{wanted[3][0]}}</td>
+        <td>{{wanted[3][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>{{wanted[4][0]}}</td>
+        <td>{{wanted[4][2]}}</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>{{wanted[5][0]}}</td>
+        <td>{{wanted[5][2]}}</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>{{wanted[6][0]}}</td>
+        <td>{{wanted[6][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>{{wanted[7][0]}}</td>
+        <td>{{wanted[7][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>{{wanted[8][0]}}</td>
+        <td>{{wanted[8][2]}}</td>
+        
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>{{wanted[9][0]}}</td>
+        <td>{{wanted[9][2]}}</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
+  
+  </div>
+  <script>
+  function hide() {
+    var x = document.getElementById('content');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+  </script>
+  <div id="content" class="blur">
+    <div class="blurr"></div>
+    <button class="btn mt-3" id="toggle"  style="display:block" onclick="this.style.display='none'; hide()" >recommend a Book</button>
+  </div>
+
+  <div class="box2">
+  <div class="UD">User Details<hr class="rec">
+    <div class="name">NAME: &emsp;<span > {{user_dict['username']}} </span></div><br>
+    <div class="un">USERNAME: &emsp;<span>{{user_dict['username']}}</span></div><br>
+    <div class="fav">HISTORY: &emsp;<span>{{user_dict["history"]}}</span></div><br>
+    <div class="lg">LIKED GENRE:  &emsp;<span>{{user_dict['lg']}}</span></div><br>
+    <div class="dg">DISLIKED GENRE:  &emsp;<span>{{user_dict['ug']}}</span></div><br>
+    <a  href="menu"><div class="close">Return</div></a>
+  </div>
+  </div>
+ 
+</body>
+</html>

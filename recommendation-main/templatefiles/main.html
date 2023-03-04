@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="staticfiles/index1.css">
+</head>
+
+<body>
+    <div class="movie">
+      <!-- change to staticfiles -->
+        <img class="mb" src="staticfiles/mbg.gif" alt="">
+        <img class="mi" src="staticfiles/movie.gif" alt="">
+        <a class="bot" href="movrec"><button class="btn mt-3">Recommend a Movie</button></a>
+        <a class="bot" href="sumrectemp"><button class="btn2 mt-3">Recommend a Movie using Text</button></a>
+        
+    </div>
+    <div class="book">
+      <!-- change to staticfiles -->
+        <img class="bb" src="staticfiles/mbg.gif" alt="">
+        <img class="bi" src="staticfiles/books.gif" alt="">
+        <a class="bot" href="rec"><button class="bbtn mt-3"> Recommend a book</button></a>
+        <a class="bot" href="addlikedgenretemp"><button class="bbtn2 mt-3">Add Liked Genre</button></a>
+        <a class="bot" href="adddislikegenretemp"><button class="bbtn3 mt-3">Add Disliked Genre</button></a>
+        <a class="bot" href="addbooktemp"><button class="bbtn4 mt-3">Add Book</button></a>
+    </div>
+    <div class="box2">
+        <div class="UD">User Details<hr class="rec">
+          <div class="name">NAME:  <span > {{user_dict['username']}} </span></div><br>
+          <div class="un">USERNAME:  <span>{{user_dict['username']}}</span></div><br>
+          <div class="fav">HISTORY:  <span>{{user_dict["history"]}}</span></div><br>
+          <div class="lg">LIKED GENRE:  <span>{{user_dict['lg']}}</span></div><br>
+          <div class="dg">DISLIKED GENRE:  <span>{{user_dict['ug']}}</span></div><br>
+        </div>
+        </div>
+        <div class="box3">
+            <form class="p-3 mt-3" method="post">
+                <div class="form-field d-flex align-items-center">
+                    <!-- <span class="far fa-user"></span> -->
+                    <input type="text" name="search" id="" placeholder="ENTER TEXT" >
+                </div>
+                <!-- <button class="bt1 mt-3"></button> -->
+              <!-- change to staticfiles -->
+              <div class="pops" onclick="pop1();pop2();pop3();pop();popp()">
+                <img class="filterrr" src="staticfiles/filter.webp" alt="">
+                <button formaction="searchbook" class="RB" id="myPop2">Book</button>
+                <button formaction="" class="ALG" id="myPop1">Genre</button>
+                <button formaction="searchgenre" class="ADL" id="myPop3">Book Genre</button>
+                <button formaction="searchmovie" class="AL" id="myPopup">Movie</button>
+                <button formaction="searchmoviegenre" class="AD" id="myPopp">Movie Genre</button>
+              </div>
+          </div>
+<script>
+   var button = document.getElementById("filter-button");
+var container = document.getElementById("filter-container");
+var input = document.querySelectorAll("input");
+
+button.onclick = function (e) {
+  e.stopPropagation();
+  if (container.classList.contains("filters--active")) {
+    container.classList.remove("filters--active");
+  } else {
+    container.classList.add("filters--active");
+  }
+};
+
+container.onclick = function (e) {
+  e.stopPropagation();
+};
+
+window.onclick = function () {
+  container.classList.remove("filters--active");
+};
+
+console.log(input);
+
+for (var i = 0; i < input.length; i++) {
+  var currentInput = input[i];
+
+  currentInput.onclick = function () {
+    var isChecked = false;
+    for (var j = 0; j < input.length; j++) {
+      if (input[j].checked) {
+        isChecked = true;
+        break;
+      }
+    }
+
+    if (isChecked) {
+      button.classList.add("button--highlight");
+    } else {
+      button.classList.remove("button--highlight");
+    }
+  };
+}
+
+$("a.gfg").click(function () {
+    $flag = 1;
+});
+function popp() {
+var popup = document.getElementById("myPopup");
+popup.classList.toggle("show");
+}
+function pop() {
+var popup = document.getElementById("myPopp");
+popup.classList.toggle("show");
+}
+function pop3() {
+var popup = document.getElementById("myPop3");
+popup.classList.toggle("show");
+}
+function pop1() {
+var popup = document.getElementById("myPop1");
+popup.classList.toggle("show");
+}
+function pop2() {
+var popup = document.getElementById("myPop2");
+popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
